@@ -4,20 +4,24 @@
     align-items: center;
   
     background-color: #a3a3a3;
-    width: 500px;
+    width: 800px;
     height: 500px;
-    margin-left: 500px;
+    margin-left: 400px;
     margin-top: 50px;
   }
   #height,
   #weight {
     width: 150px;
     height: 25px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+  }
+
+  p{
+    margin-left: 220px;
   }
   
   #weight-guide {
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 25px;
   }
   
@@ -31,7 +35,7 @@
   button {
     width: 150px;
     height: 35px;
-    margin-left: 95px;
+    margin-left: 270px;
     /* margin-top: px; */
     background-color: #fff;
     padding: 1px 20px;
@@ -47,5 +51,9 @@
     padding-left: 15px;
     padding-top: 25px;
     
+  }
+
+  h3{
+    margin-left: 250px;
   }
   
