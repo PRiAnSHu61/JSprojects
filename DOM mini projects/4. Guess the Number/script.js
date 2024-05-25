@@ -19,11 +19,30 @@ if(playgame){
 }
 
 function validateGuess(guess) {
-    //
+    if (isNaN(guess)){
+        alert('Please enter a valid number');
+    } else if (guess<1){
+        alert('Please enter a number greater than 1');
+    } else if (guess>100){
+        alert('Please enter a number less than 101');
+    } else {
+        prevGuesses.push(guess);
+        if(numGuesses === 11){
+            displayGuess(guess);
+            displayMessage(`Random Number was ${randomNumber}`);
+            endGame();
+        } else {
+            displayGuess(guess);
+            checkGuess(guess);
+        }
+    }
 }
 
 function checkGuess(guess){
-    //
+    if (guess === randomNumber){
+        displayMessage("You Guessed it right");
+        
+    }
 }
 
 function displayMessage(message){
