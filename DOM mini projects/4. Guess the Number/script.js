@@ -65,11 +65,18 @@ function endGame(){
     userInput.value = '';
     userInput.setAttribute('disabled', '');
     p.classList.add('button');
-    p.innerHTML = `<h2 id="startOver">Start new game</h2>`;
+    p.innerHTML = `<h2 id="newGame">Start new game</h2>`;
     startOver.appendChild(p);
     newGame();
 }
 
 function newGame(){
-    
+    const newGame = document.querySelector('#newGame');
+    newGame.addEventListener('click', function(e) {
+        randomNumber = parseInt(Math.random()*100 + 1);
+        prevGuesses = [];
+        numGuesses = 1;
+        guessSlot.innerHTML = '';
+        
+    })
 }
