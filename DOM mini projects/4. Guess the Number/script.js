@@ -61,9 +61,15 @@ function displayGuess (guess){
 }
 
 function endGame(){
-    //
+    playGame = false;
+    userInput.value = '';
+    userInput.setAttribute('disabled', '');
+    p.classList.add('button');
+    p.innerHTML = `<h2 id="startOver">Start new game</h2>`;
+    startOver.appendChild(p);
+    newGame();
 }
 
 function newGame(){
-    //
+    
 }
