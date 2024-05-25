@@ -50,11 +50,14 @@ function checkGuess(guess){
 }
 
 function displayMessage(message){
-    
+    lowOrHi.innerHTML = `<h2>${message}</h2>`;
 }
 
 function displayGuess (guess){
-    //
+    userInput.value = '';
+    guessSlot.innerHTML += `${guess} `;
+    numGuesses++;
+    remaining.innerHTML = `${11 - numGuesses}`;
 }
 
 function endGame(){
